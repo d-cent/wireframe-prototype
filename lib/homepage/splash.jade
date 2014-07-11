@@ -1,3 +1,40 @@
+mixin activity
+  li.activity
+    header
+      h2 John Doe&nbsp;
+      small: span.time &nbsp;2 hours ago
+    .activity-text
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium interdum nunc bibendum placerat. Vivamus porta tincidunt metus sed sollicitudin. Pellentesque sed commodo leo...
+    ul.actions
+      li.action
+        a(href='#')
+          i.glyphicon.glyphicon-thumbs-up
+          | Like
+      li.action
+        a(href='#')
+          i.glyphicon.glyphicon-ok-circle
+          | Mark resolved
+      li.action
+        a(href='#')
+          i.glyphicon.glyphicon-share-alt
+          | Convert to task
+
 #splash
   header.app-header
-    h1 Wireframe
+    h1.logo-container: img.logo(src='http://dcentproject.eu/wp-content/themes/dcent/images/dcent-logo.png')
+    ul.global-nav
+      li: a.nav(href='#') Notifications
+      li: a.nav(href='#') Messages
+      li: a.nav(href='#') Tasks
+      li: a.nav(href='#') Votes
+      li: a.nav(href='#') Articles
+
+  section.app-content
+    .activitystreams
+      ul.nav.nav-pills.nav-filters
+        li.active: a(href='#') Hot now
+        li: a(href='#') My likes
+        li: a(href='#') Closing soon
+      ul.activitystreams-list
+        - for (var i = 0; i < 20; i++)
+          +activity()

@@ -9,7 +9,7 @@
     "user"
   ],
   "scripts": [ "boot.js" ],
-  "styles": ["index.styl"],
+  "styles": ["boot.styl", "boot-responsive.styl"],
   "images": [
     "images/bg.jpg",
     "images/favicon.ico"

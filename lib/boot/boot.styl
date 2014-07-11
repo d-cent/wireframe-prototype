@@ -1,0 +1,133 @@
+header_height = 60px
+activitystream_width = 588px
+
+body
+  -webkit-font-smoothing antialiased
+  font-family "Lucida Grande"
+
+h1,h2,h3
+  font-weight 100
+
+a
+  font-weight bold
+
+ul
+  list-style none
+
+.btn
+  letter-spacing 2px
+  text-transform uppercase
+
+.nav-pills > li > a
+  border-radius 5px
+  background-color #1f1f1f
+  color #fff
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills>li.active>a:focus
+  background-color #007e84
+
+.nav>li>a:hover,
+.nav>li>a:focus
+  background-color #1f1f1f
+  color #fff
+
+#splash
+  .app-header
+    position fixed
+    left 0
+    right 0
+    background-color #1f1f1f
+    color #fff
+    padding 0 16px
+    height header_height
+    z-index 10
+
+    h1.logo-container
+      display inline-block
+      font-size 34px
+      margin 12px 0
+      .logo
+        height 40px
+        display inline-block
+        margin-right 10px
+        margin-top -2px
+
+    .global-nav
+      display inline-block
+      position absolute
+      left 80px
+      top 22px
+      li
+        display inline-block
+        text-transform uppercase
+        margin-right 12px
+        a
+          -webkit-font-smoothing antialiased
+          font-family "Lucida Grande"
+          font-weight 100
+          font-size 12px
+          color #fff
+
+  .app-content
+    background-color #ecf0f1
+    display block
+    overflow hidden
+
+    .activitystreams
+      top (header_height + 30)px
+      left 0
+      max-width activitystream_width
+      position relative
+      margin 0 auto
+      margin-bottom 120px
+
+      ul.nav-filters
+        position relative
+        margin 0 auto
+        margin-bottom 12px
+        text-align center
+
+        li
+          float none
+          display inline-block
+
+      ul.activitystreams-list
+        border 1px solid #bdc3c7
+        margin-bottom 0
+        padding-left 0
+        list-style none
+        border-radius 6px
+
+        li.activity
+          min-height 100px
+          background-color #fff
+          border-bottom 1px solid rgb(215, 219, 221)
+          padding 12px
+          &:first-child
+            border-radius 5px 5px 0 0
+          &:last-child
+            border-radius 0 0 5px 5px
+
+          header
+            h2
+              display inline-block
+              font-size 14px
+              font-weight bold
+              margin 0
+            .time
+              &:before
+                content "\00b7"
+          .actions
+            margin-top 6px
+            padding 0
+
+            .action
+              display inline-block
+              margin-left 6px
+              a
+                color #007e84
+                i
+                  display inline-block
+                  margin-right 2px
