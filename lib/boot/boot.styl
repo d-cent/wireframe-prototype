@@ -1,5 +1,5 @@
 header_height = 60px
-activitystream_width = 588px
+activitystream_width = 724px
 
 body
   -webkit-font-smoothing antialiased
@@ -77,9 +77,9 @@ ul
 
     .activitystreams
       top (header_height + 30)px
-      left 0
       max-width activitystream_width
       position relative
+      bottom 0
       margin 0 auto
       margin-bottom 120px
 
@@ -111,14 +111,22 @@ ul
             border-radius 0 0 5px 5px
 
           header
-            h2
-              display inline-block
-              font-size 14px
+            h1
+              color #004448
+              font-size 16px
               font-weight bold
               margin 0
-            .time
-              &:before
-                content "\00b7"
+          h2
+            color #007e84
+            display inline-block
+            font-size 14px
+            font-weight bold
+            margin 0
+          .time
+            color #48bec4
+            margin-right 4px
+            &:before
+              content "\00b7"
           .actions
             margin-top 6px
             padding 0
@@ -131,3 +139,92 @@ ul
                 i
                   display inline-block
                   margin-right 2px
+
+      .activity-description
+        background-color #fff
+        border-radius 5px
+        border 1px solid #bdc3c7
+        padding 20px
+        h1
+          color #004448
+          font-size 26px
+          font-weight bold
+          margin 0
+        h2
+          color #007e84
+          display inline-block
+          font-size 14px
+          font-weight bold
+          margin 0
+        .time
+          color #48bec4
+          margin-right 4px
+          &:before
+            content "\00b7"
+        .og
+          background-color #ecf0f1
+          border-radius 5px
+          margin-top 12px
+          padding 12px
+          h1
+            font-size 14px
+            font-weight normal
+            color #007e84
+            margin-bottom 12px
+          .block
+            width 100%
+            overflow hidden
+            img
+              max-width 150px
+              max-height 150px
+              width 150px
+              float left
+            .text
+              font-size 12px
+              float right
+              width 500px
+        .actions
+          width 100%
+          text-align right
+          margin-top 12px
+          .action
+            display inline-block
+            margin-left 6px
+            a
+              color #007e84
+              i
+                margin-right 4px
+        .glyphicon
+          width 20px
+          display inline-block
+        .comment
+          height 50px
+          padding-left 16px
+          font-size 13px
+          display inline-block
+          width 657px
+      .buttons
+        width 100%
+        text-align right
+        margin-top 12px
+
+        .btn-share
+          background-color #007e84
+          color #fff
+
+        .btn-task
+          background-color #48bec4
+          color #fff
+
+      .goback
+        position absolute
+        top 65px
+        background #fff
+        -webkit-transform rotate(-90deg)
+        left -40px
+        border 1px solid #bdc3c7
+        padding 6px 12px
+        border-radius 6px
+        border-bottom 0
+        a
+          color #48bec4
